@@ -21,6 +21,10 @@ p {
 	text-align: center;
 }
 
+.rightalign {
+	text-align: right;
+}
+
 /**************** layout ******************/
 
 .background {
@@ -28,5 +32,24 @@ p {
 }
 
 .main-container {
-	
+	max-width: 1100px;
+}
+
+#sec-top {
+
+}
+
+#sec-left{
+	text-wrap: break-word;
+}
+
+#sec-footer {
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+/************** other stuff ****************/
+
+.currentlink {
+	color: gray;
 }
