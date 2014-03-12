@@ -29,6 +29,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/compasses', routes.compasses);
+app.get('/si', routes.si);
+app.get('/contact', routes.contact);
+app.get('/links', routes.links);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
