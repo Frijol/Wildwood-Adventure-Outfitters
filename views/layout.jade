@@ -6,35 +6,31 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 
 		script(src="/javascripts/jquery.js")
+		script(src="/javascripts/active-link.js")
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation/foundation.min.js")
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation/foundation.forms.js")
 		script.
 			$(document).foundation();
 	
 	body
-		.background
-			.main-container
-				#sec-top
-					a(href="/")
-						h1 Wildwood Adventure Outfitters
+		#main-container
+			#sec-top
+				a(href="/")
+					h1 Wildwood Adventure Outfitters
+			.large-2.columns.left#sec-left
+				<br/>
+				a(href="/home")
+					| Home<br/>
+				a(href="/compasses")
+					| Compasses<br/>
+				a(href="/si")
+					| Finger sticks<br/>
+				a(href="/contact")
+					| Contact Us<br/>
+				a(href="/links")
+					| Links
+			.large-10.columns#sec-body
+				block content
 
-				section
-					.large-2.columns.left#sec-left
-						<br/>
-						a(href="/")
-							| Home<br/>
-						a(href="/compasses")
-							| Compasses<br/>
-						a(href="/si")
-							| Finger sticks<br/>
-						a(href="/contact")
-							| Contact Us<br/>
-						a(href="/links")
-							| Links
-					.large-10.columns
-						.fre-container
-							block content
-
-					section
-						.large-6.columns.right.rightalign#sec-footer
-							p Wildwood Adventure Outfitters &copy; 2014.
+			.large-6.columns.right.rightalign#sec-footer
+				p Wildwood Adventure Outfitters &copy; 2014.

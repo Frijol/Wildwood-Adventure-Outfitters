@@ -27,12 +27,12 @@ p {
 
 /**************** layout ******************/
 
-.background {
-
+#main-container {
+	max-width: 1100px;
 }
 
-.main-container {
-	max-width: 1100px;
+#sec-body {
+
 }
 
 #sec-top {
@@ -51,5 +51,5 @@ p {
 /************** other stuff ****************/
 
 .currentlink {
-	color: gray;
+	color: black;
 }

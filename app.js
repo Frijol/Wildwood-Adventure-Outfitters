@@ -29,6 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/home', routes.home);
 app.get('/compasses', routes.compasses);
 app.get('/si', routes.si);
 app.get('/contact', routes.contact);

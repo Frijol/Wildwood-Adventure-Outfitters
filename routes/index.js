@@ -4,6 +4,10 @@
  */
 
 exports.index = function(req, res){
+  res.redirect('/home');
+};
+
+exports.home = function(req, res){
   res.render('index', { title: 'Wildwood Adventure Outfitters' });
 };
 
