@@ -12,28 +12,30 @@ html
 			$(document).foundation();
 	
 	body
-		a(href="/")
-			h1 Wildwood Adventure Outfitters
+		.background
+			.main-container
+				a(href="/")
+					h1 Wildwood Adventure Outfitters
 
-		section
-			.small-2.columns.left#sec-left
-					a(href="/")
-						| Home<br/>
-					a(href="/compasses")
-						| Compasses<br/>
-					a(href="/si")
-						| Finger sticks<br/>
-					a(href="/contact")
-						| Contact Us<br/>
-					a(href="/links")
-						| Links
-			.small-10.columns
-				.fre-container
-					block content
+				section
+					.small-2.columns.left#sec-left
+							a(href="/")
+								| Home<br/>
+							a(href="/compasses")
+								| Compasses<br/>
+							a(href="/si")
+								| Finger sticks<br/>
+							a(href="/contact")
+								| Contact Us<br/>
+							a(href="/links")
+								| Links
+					.small-10.columns
+						.fre-container
+							block content
 
-			section#sec-footer
-				.row
-					.large-12.columns.large-right(style="text-align: right")
+					section#sec-footer
 						.row
-							.large-6.columns.right
-								p Wildwood Adventure Outfitters &copy; 2014.
+							.large-12.columns.large-right(style="text-align: right")
+								.row
+									.large-6.columns.right
+										p Wildwood Adventure Outfitters &copy; 2014.
